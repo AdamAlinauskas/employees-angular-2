@@ -1,3 +1,19 @@
 <h3>Create Employee</h3>
 
-<input [(ngModel)]="name"/>
+<form>
+    <div>
+        <label>First Name</label>
+        <input type='text' [(ngModel)]="employee.firstName"/>
+    </div>
+
+    <div>
+        <label>Last Name</label>
+        <input type='text' [(ngModel)]="employee.lastName"/>
+    </div>
+
+<div>
+    <input type="submit" value="Save" (click)='save()'>
+</div>
+
+</form>
+
