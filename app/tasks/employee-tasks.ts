@@ -2,7 +2,13 @@ import {Employee} from "../domain/employee";
 
 export class EmployeeTasks{
 
-    employees: Employee[] = [];
+    employees: Employee[] = [ 
+        new Employee("Adam","Alinauskas"),
+        new Employee("Jill","Valentine"),
+        new Employee("Chris","Redfield"),
+        new Employee("Claire","Redfield"),
+        new Employee("Ada","Wong")        
+        ];
 
     //return a promoise for now. This will allow us to refactor to using a web service.
     save(employee:Employee){

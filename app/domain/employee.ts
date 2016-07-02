@@ -2,8 +2,7 @@
 import {Job} from "./job"
 
 export class Employee{
-    firstName:string;
-    lastName:string;
-    employeeID:number;
-    role:Job;
+    constructor(public firstName:string, public lastName:string,public employeeID?:number, public job?:Job ){
+
+    }
 }
