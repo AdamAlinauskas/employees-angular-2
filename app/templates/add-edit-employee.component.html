@@ -11,9 +11,19 @@
         <input type='text' [(ngModel)]="employee.lastName"/>
     </div>
 
-<div>
-    <input type="submit" value="Save" (click)='save()'>
-</div>
+    <div>
+        <label>Job</label>
+        <select [(ngModel)]="employee.job">
+            <option *ngFor="let job of jobs" [ngValue]="job">{{job.name}}</option>
+        </select>
+    </div>
 
+    <div>
+        <input type="submit" value="Save" (click)='save(employee)'>
+    </div>
 </form>
+
+{{diag()}}
+
+
 

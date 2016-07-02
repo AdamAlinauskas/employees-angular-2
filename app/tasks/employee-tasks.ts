@@ -1,4 +1,5 @@
 import {Employee} from "../domain/employee";
+import {ALL_JOBS} from "../domain/Jobs";
 
 export class EmployeeTasks{
 
@@ -18,5 +19,9 @@ export class EmployeeTasks{
 
     getAllEmployees(){
         return Promise.resolve(this.employees);
+    }
+
+    getJobs(){
+        return Promise.resolve(ALL_JOBS);
     }
 }

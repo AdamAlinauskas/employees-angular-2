@@ -13,7 +13,6 @@ export class EmployeesComponent implements OnInit {
     employees:Employee[] = [];
 
     constructor(public employeeTasks: EmployeeTasks){
-
     }
 
     ngOnInit(){
